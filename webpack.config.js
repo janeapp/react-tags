@@ -29,4 +29,8 @@ module.exports = {
   //     'react-dom': 'preact-compat'
   //   }
   // }
+  devServer: {
+    compress: true,
+    disableHostCheck: true,
+  }
 }
