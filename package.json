@@ -12,14 +12,12 @@
     "dev": "webpack-dev-server --progress --colors --port ${PORT:-8080} --host 0.0.0.0",
     "build:example": "webpack -p --config-name example",
     "build:es5": "buble lib --objectAssign -o dist-es5",
-    "build:es6": "buble lib --objectAssign -o dist-es6 -t node:6",
-    "prepublish": "npm run build:es5 && npm run build:es6"
+    "prepublish": "npm run build:es5"
   },
   "files": [
     "lib",
     "example",
     "dist-es5",
-    "dist-es6",
     "LICENSE",
     "README.md"
   ],
